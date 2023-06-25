@@ -28,7 +28,7 @@
 
 # 手順1 サーバーセットアップ
 - データ用dvdにESXiのisoファイルを焼きこむ
-![burnDiskImage](articles\images\burnDiskImage.png)
+![burnDiskImage](articles/images/burnDiskImage.png)
 
 - サーバーを起動後にESXiのisoファイルを焼きこんだdvdをサーバーに読み込ませる。
 - **後で画像を挿入する**
