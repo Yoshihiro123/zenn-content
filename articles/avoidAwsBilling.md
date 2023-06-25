@@ -14,14 +14,15 @@
 - モニター
 - ルーター (私の環境では既存のルーターは勝手にいじれないので、既存のルーターの配下に別のルーターを接続する必要がありました。)
 - スイッチ (任天堂スイッチではありません。)
-![私がルーターとスイッチを購入した所](https://jp.mercari.com/item/m43330963093)
+私がルーターとスイッチを購入した所
+> https://jp.mercari.com/item/m43330963093
 - ルーターとスイッチに接続するコンソールケーブル
-![コンソールケーブル](https://www.amazon.co.jp/-/en/gp/product/B00JPFOTOY/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1)
+> https://www.amazon.co.jp/-/en/gp/product/B00JPFOTOY/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1
 - データ用DVD
-![例えばこれ](https://www.amazon.co.jp/-/en/Verbatim-8-5-GB-Times-Printing-dhr85hp5-V1/dp/B002NMXHCQ/ref=sr_1_20?adgrpid=52117793246&hvadid=651053984053&hvdev=c&hvlocphy=1009564&hvnetw=g&hvqmt=e&hvrand=16915665697272672217&hvtargid=kwd-363148895404&hydadcr=25914_13609375&jp-ad-ap=0&keywords=%E3%83%87%E3%83%BC%E3%82%BF%E7%94%A8dvd&qid=1687659095&sr=8-20)
+> https://www.amazon.co.jp/-/en/Verbatim-8-5-GB-Times-Printing-dhr85hp5-V1/dp/B002NMXHCQ/ref=sr_1_20?adgrpid=52117793246&hvadid=651053984053&hvdev=c&hvlocphy=1009564&hvnetw=g&hvqmt=e&hvrand=16915665697272672217&hvtargid=kwd-363148895404&hydadcr=25914_13609375&jp-ad-ap=0&keywords=%E3%83%87%E3%83%BC%E3%82%BF%E7%94%A8dvd&qid=1687659095&sr=8-20
 - ESXiのisoファイル (無料でダウンロード可能です。)
-![ダウンロードサイト](https://mirror.mahanserver.net/VMware/ESXI/7.0.1/)
-- LANケーブル (必要な長さのものを購入してください。必要以上にケーブルが長いと邪魔になります。)
+> https://mirror.mahanserver.net/VMware/ESXI/7.0.1/
+- LANケーブル (必要な長さのものを購入してください。必要以上にケーブルが長いと邪魔になります。
 - TeraTerm (用意するものが必ずTeraTermである必要はありません。Puttyなどでもよいと思います。必須ではありませんが、自動でログが取られるように設定したほうがよいでしょう。)
 
 > 中古サーバーでは以下のものが欠落している可能性があります。
@@ -87,6 +88,7 @@ Router(config-if)#switchport mode trunk
 > webブラウザにてデフォルトゲートウェイとして家庭用ルーターに割り当てられているアドレスを検索欄に入力する。ほとんどの家庭用ルーターにはこの方法でアクセスできると思います。
 > 既存の家庭用ルーターに割り当てられているプライベートIPアドレスが何かを確認するだけで、特に設定変更などは行いません。これを後の手順で192.168.3.0/25と192.168.3.128/25に分割します。
 ![SplitNetwork1](images/SplitNetwork1.png)
+
 ![SplitNetwork2](images/SplitNetwork2.png)
 
 # 手順4 スイッチのセットアップ
