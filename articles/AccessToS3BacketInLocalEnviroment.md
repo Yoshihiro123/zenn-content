@@ -11,11 +11,11 @@
 
 ## 必要なもの
 
-> AWS CLI か awslocal CLI
-> Docker
-> Python (pip installを使用するから)
-> Apacheなどのhttpサーバー機能を利用できるようにするもの
-> LocalStack
+- AWS CLI か awslocal CLI
+- Docker
+- Python (pip installを使用するから)
+- Apacheなどのhttpサーバー機能を利用できるようにするもの
+- LocalStack
 
 ## AWS CLIをインストールする
 
