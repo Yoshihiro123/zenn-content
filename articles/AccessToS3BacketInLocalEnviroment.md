@@ -19,13 +19,13 @@
 
 ## AWS CLIをインストールする
 
-> curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-> unzip awscliv2.zip
-> sudo ./aws/install
+- curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+- unzip awscliv2.zip
+- sudo ./aws/install
 
 ## Dockerをインストールする
 
-> sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+- sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 ## pythonをインストールする
 
@@ -33,7 +33,7 @@
 
 ## Apacheをインストールする(別のPCからウェブブラウザでs3バケットを閲覧するから)
 
-> yum install httpd
+- yum install httpd
 
 > firewallを使用している場合はhttpポートを開放する必要があります。
 > そうしないと別のPCからウェブブラウザでs3バケットを閲覧できません。
@@ -44,19 +44,19 @@
 
 ## LocalStackをインストールする
 
-> python3 -m pip install --upgrade localstack
+- python3 -m pip install --upgrade localstack
 
 ## ウェブブラウザで閲覧するためのhtmlファイルを /var/www/html に作成する
 
-> htmlファイルの中身は何でもよいので、いったんtestとだけ記載されたhtmlファイルを作成する。
+- htmlファイルの中身は何でもよいので、いったんtestとだけ記載されたhtmlファイルを作成する。
 
 - cd /var/www/html
 - echo test >> index.html
 
-> 一般的にはhtmlファイルを作成するときはVisual Studio Codeなどを使うことが多いと思うので、PC上で作成したファイルをサーバーに転送したいと思うかもしれません。
-> その場合は /var/www/html の所有者をよく確認する必要があります。
-> 例えば、 /var/www/html の所有者が root でサーバーに別のユーザーとして接続している場合は権限不足のためファイルをサーバーに転送することはできません。
-> その場合は root ユーザーとしてサーバーにログインするか、 /var/www/html の所有者を別のユーザーに変更する必要があります。
+- 一般的にはhtmlファイルを作成するときはVisual Studio Codeなどを使うことが多いと思うので、PC上で作成したファイルをサーバーに転送したいと思うかもしれません。
+- その場合は /var/www/html の所有者をよく確認する必要があります。
+- 例えば、 /var/www/html の所有者が root でサーバーに別のユーザーとして接続している場合は権限不足のためファイルをサーバーに転送することはできません。
+- その場合は root ユーザーとしてサーバーにログインするか、 /var/www/html の所有者を別のユーザーに変更する必要があります。
 
 ## s3バケットを作成する
 
