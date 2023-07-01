@@ -34,6 +34,8 @@
 ## Apacheをインストールする(別のPCからウェブブラウザでs3バケットを閲覧するから)
 
 - yum install httpd
+- systemctl start httpd.service
+- systemctl enable httpd.service
 
 > firewallを使用している場合はhttpポートを開放する必要があります。
 > そうしないと別のPCからウェブブラウザでs3バケットを閲覧できません。
