@@ -1,4 +1,8 @@
+自分のIAMロール
+
 ![My IAM User](./images/IamRole.png)
+
+協力メンバーがIAMロールにスイッチして、EC2インスタンスを閲覧できたことがわかる証跡
 
 ```
 $ aws ec2 describe-instances --profile dev-session
